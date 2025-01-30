@@ -1,0 +1,100 @@
+/* menu animation */
+@keyframes fadeIn1 {
+    0% {
+      right: -400px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  
+  .false {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: #03071e;
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    animation: fadeIn1 0.3s;
+    z-index: 5;
+  }
+    
+  .true {
+    position: fixed;
+    right: -1000px;
+    background-color: #000000;
+    color: #fdfdfd;
+    width: 420px;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in;
+    z-index: 5;
+  }
+
+
+  .companyName{ 
+    margin-left: 4.5rem; 
+    font-size: 1.2rem;
+    width: auto;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .link {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fdfdfd;
+  }
+  
+  .links-container {
+    margin-top: 3rem;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .icons-container {
+    margin-top: 3rem;
+    margin-left: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .iconN{
+    margin-right: 15px;
+    color: white;
+  }
+  
+  .icon-menu{
+    position: fixed;
+    right: 2rem;
+    top: 2.2rem;
+
+  }
+
+  @media only screen and (min-width: 1024px){
+    .icon-menu{
+      display: none;
+    }
+  }
+
+  
+  @media only screen and (min-width: 772px) and (max-width: 1033px) {
+    .icon-menu{
+      display: none;
+    }
+  }
+  
+  
