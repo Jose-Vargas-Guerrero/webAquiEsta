@@ -1,0 +1,122 @@
+---
+import eventos from '../../assets/eventos.avif'
+---
+
+<section class="eventos">
+    <div class="lala">    <img class="eventosImage" src={eventos.src}/></div>
+    <aside class="aside">
+    <h4>Eventos en la ciudad</h4>
+    <h5>Tus eventos con mejor alcance en <span class="bold">Aquiesta.us</span></h5>
+    <h6>3 Motivos para Promocionar Tus Eventos en Nuestra Página</h6>
+    <ol class="topics">
+        <li>
+            <h4>Mayor alcance y visibilidad</h4>
+            <p>
+                Llega a una audiencia más amplia y diversa interesada en eventos locales, asegurando que más personas descubran y asistan a tu evento.
+            </p>
+        </li>
+        <li>
+            <h4>Promoción estratégica</h4>
+            <p>
+                Destaca tu evento con herramientas de marketing específicas, como anuncios destacados, calendarios visibles y recomendaciones personalizadas para atraer a tu público ideal.
+            </p>
+        </li>
+        <li>
+            <h4>Resultados</h4>
+            <p>
+                Monitorea el impacto de tu promoción con estadísticas claras sobre vistas, interacciones y reservaciones, para asegurarte de que tu evento sea todo un éxito.
+            </p>
+        </li>
+    </ol>
+    </aside>
+
+</section>
+
+<style>
+    .eventos{
+        position: relative;
+        padding: 0 2rem;
+        max-width: 100vw;
+        height: auto;
+        font-family: var(--familjen);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .aside{
+        width: 40%;
+        height: 100%;
+    }
+
+    .aside > h4{
+        font-size: 1.6rem;
+    }
+
+    .aside > h5{
+        margin: 0 0;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .aside >h6{
+        font-size: 1.5rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .topics{
+        counter-reset: contador;
+        list-style: none;
+        padding-left: 0;
+        position: relative;
+    }
+
+    .topics > li > h4{
+        color: #bb0000;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .topics > li > p{
+        font-size: 1.25rem;
+    }
+
+    .topics > li {
+    counter-increment: contador;
+    position: relative; /* Permite posicionar el número sin afectar el contenido */
+    padding-left: 2rem;  
+    margin: 6rem 0;
+  }
+
+  .topics li::before {
+    position: absolute;
+    content: counter(contador, decimal-leading-zero);
+    font-weight: bold;
+    color: red;
+    font-size: 1.5rem;
+    left: 0; /* Ubica el número a la izquierda del contenido */
+  }
+
+  .lala{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+
+  .eventosImage{
+    width: 760px;
+    height: auto;
+    position: sticky;
+    right: 0;
+    top: 150px;
+  }
+
+</style>

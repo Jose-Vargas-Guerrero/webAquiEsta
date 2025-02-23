@@ -1,9 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Banner from '../components/reactComponents/Banner';
+import Anunciate from '../components/astroComponents/Anunciate.astro';
+import Servicios from '../components/astroComponents/Servicios.astro';
+import Promo from '../components/astroComponents/Promo.astro';
+import SobreNosotros from '../components/astroComponents/SobreNosotros.astro';
+import Slider from '../components/reactComponents/Slider';
+import Eventos from '../components/astroComponents/Eventos.astro';
+import Redes from '../components/astroComponents/Redes.astro';
+import PublicateBanner from '../components/astroComponents/PublicateBanner.astro';
+import Transmision from '../components/astroComponents/Transmision.astro';
 ---
 
 <Layout title="Inicio">
-	<h1>Aqui esta . us</h1>
+	<Banner client:load/>
+	<Anunciate/>
+	<Servicios/>
+	<Promo/>
+	<SobreNosotros/>
+	<Slider client:load/>
+	<Eventos/>
+	<Redes/>
+	<PublicateBanner/>
+	<Transmision/>
 </Layout>
 
 

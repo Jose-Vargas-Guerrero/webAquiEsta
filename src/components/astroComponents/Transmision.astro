@@ -1,0 +1,77 @@
+<section class="transmision">
+  <div class="info">
+    <p class="cut">Transmisión en</p>
+    <h3 class="all">Vivo</h3>
+    <p class="text">
+      Lleva tu marca al siguiente nivel con nuestra sección de <span
+        class="bold">Transmisión en Vivo</span
+      >, un espacio diseñado para captar la atención en tiempo real. Ideal para
+      lanzamientos, demostraciones, eventos especiales o promociones exclusivas.
+      ¡Conéctate con tu audiencia de manera auténtica y crea un impacto duradero
+      en sus decisiones de compra!
+    </p>
+  </div>
+  <span class="circle"></span>
+  <div class="video">
+    <iframe 
+    src="https://www.youtube.com/embed/tavl6KUTSTE?si=7yFvQDl7eiRT-K93&controls=0&autoplay=1&mute=1&loop=1&playlist=tavl6KUTSTE" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+  </div>
+</section>
+
+<style>
+  .transmision {
+    position: relative;
+    font-family: var(--familjen);
+    height: 80vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info {
+    padding: 2rem 6rem;
+    position: relative;
+  }
+
+  .cut {
+    font-size: 2rem;
+    margin: 0 0;
+  }
+
+  .all {
+    font-size: 10rem;
+    margin: 0 0;
+  }
+
+  .circle {
+    position: absolute;
+    background-color: #bb0000;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    top: 20%;
+    left: 2rem;
+  }
+
+  .text {
+    font-size: 1.7rem;
+    width: 89%;
+    font-weight: 300;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .video > iframe {
+    height: 100%;
+    width: 100%;
+  }
+</style>

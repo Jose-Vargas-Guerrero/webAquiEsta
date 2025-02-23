@@ -1,0 +1,63 @@
+---
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+
+---
+
+
+<section class="redes">
+    <h2>NUESTRAS REDES SOCIALES</h2>
+    <div class="sections">
+        <a href="#">
+            <FaFacebook className="icon"/>
+            <p>Síguenos en Facebook</p> 
+        </a>
+        <a href="#">
+            <FaInstagram className="icon"/>
+            <p>Agreganos en Instagram</p> 
+        </a>
+        <a href="#">
+            <FaTiktok className="icon"/>
+            <p>Etiquétanos en Tiktok</p> 
+        </a>
+    </div>
+</section>
+
+
+
+<style>
+    .redes{
+        height: 40vh;
+        max-width: 100vw;
+        padding: 0 2rem;
+        font-family: var(--familjen);
+    }
+
+    .redes > h2{
+        text-align: center;
+        font-size: 3.4rem;
+    }
+
+    .sections{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .sections > a{
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: black;
+    }
+
+    .icon{
+        color: #bb0000;
+        height: 70px;
+        width: 86px;
+    }
+</style>

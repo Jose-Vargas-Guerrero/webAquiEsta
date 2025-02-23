@@ -1,0 +1,103 @@
+---
+import publicate from '../../assets/publicate.avif'
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+
+---
+
+
+
+<section class="publicate">
+    <h2>¡Publícate <span class="gratis">GRATIS</span> aquí!</h2>
+    <div class="publicateAside">
+        <p>En este espacio puedes agregar un anuncio publicitario sobre tu negocio con una foto tipo banner para más información. ¡Incluye link directo!</p>
+        <a href="#">
+            Contáctanos
+            <IoIosArrowDroprightCircle className='icon'/>
+        </a>
+    </div>
+</section>
+
+
+<style>
+    .publicate{
+        font-family: var(--familjen);
+        position: relative;
+        height: 50vh;
+        max-width: 100vw;
+        padding: 0 10%;
+        background-image: url(../../assets/publicate.avif);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .publicate::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(71, 71, 71, 0.8);
+        z-index: 1;
+    }
+
+    .publicate > h2{
+        width: 40%;
+        color: white;
+        z-index: 2;
+        position: relative;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    .gratis{
+        font-weight: bold;
+    }
+
+    .publicateAside{
+        position: relative;
+        z-index: 2;
+        color: white;
+        width: 46%;
+    }
+
+    .publicateAside > p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .publicateAside > a {
+        width: 140px;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+        padding: 0.5rem 0.2rem 0.5rem 1rem;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: background-color ease 0.2s, color ease 0.2s;
+    }
+
+    .icon{
+        margin: 0 0 0 1rem;
+        font-size: 1rem;
+        height: 30px;
+        width: 30px;
+        transition:color ease 0.2s;
+    }
+
+    .publicateAside > a:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .publicateAside > a:hover .icon{
+        color: white;
+    }
+
+</style>

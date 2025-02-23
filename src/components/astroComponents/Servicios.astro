@@ -1,0 +1,162 @@
+---
+import servicio1 from "../../assets/servicio1.avif";
+import servicio2 from "../../assets/servicio2.avif";
+import servicio3 from "../../assets/servicio3.avif";
+import servicio4 from "../../assets/servicio4.avif";
+---
+
+<section class="serviciosContainer">
+  <div class="serviciosIntro">
+    <p class="title">Explora TODO lo que hay en AQUIESTA.US</p>
+    <h3>Servicios</h3>
+    <p class="text">
+      Descubre una amplia gama de servicios y negocios locales organizados en
+      categorías fáciles de navegar. Conecta rápidamente con profesionales,
+      tiendas y servicios esenciales en tu área. ¡Todo lo que buscas está a un
+      clic de distancia!
+    </p>
+  </div>
+  <div class="servicioInfo">
+    <div class="servicioCard">
+      <p class="number">01</p>
+      <img src={servicio1.src} />
+      <h4>Empleos</h4>
+      <p class="text2">
+        Accede a una variedad de oportunidades laborales en diferentes sectores
+        y niveles. Simplificamos tu búsqueda con herramientas que conectan tu
+        talento con las empresas que lo necesitan. ¡Tu futuro comienza aquí!
+      </p>
+    </div>
+    <div class="servicioCardRed">
+      <p class="number">02</p>
+      <img src={servicio2.src} />
+      <h4>Real State</h4>
+      <p class="text2">
+        Explora una amplia selección de casas y departamentos en venta o renta en tu zona. Conecta fácilmente con propietarios y agentes para encontrar la propiedad ideal para ti. ¡Haz realidad tus sueños inmobiliarios hoy!
+      </p>
+    </div>
+    <div class="servicioCard">
+      <p class="number">03</p>
+      <img src={servicio3.src} />
+      <h4>Restaurantes</h4>
+      <p class="text2">
+        Explora una variedad de opciones gastronómicas para todos los gustos y ocasiones. Desde comida local hasta cocina internacional, encuentra el lugar perfecto para disfrutar una experiencia única. ¡Tu próxima comida memorable te espera!
+      </p>
+    </div>
+    <div class="servicioCardRed">
+      <p class="number">04</p>
+      <img src={servicio4.src} />
+      <h4>Compra y Venta</h4>
+      <p class="text2">
+        Encuentra excelentes artículos a mejor precio o publica tus propios productos para vender. Desde electrónicos hasta muebles, conecta con compradores y vendedores fácilmente. ¡Todo lo que necesitas está aquí!
+      </p>
+    </div>  
+  </div>
+</section>
+
+<style>
+  .serviciosContainer {
+    font-family: var(--familjen);
+    padding: 5rem 3rem;
+    height: auto;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .serviciosIntro {
+    width: 50%;
+    height: 40%;
+    top: 18vh;
+    position: sticky;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 2rem 0;
+  }
+
+  .text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80%;
+  }
+
+  .serviciosIntro > h3 {
+    margin: 0 0 12rem 0;
+    font-size: 51px;
+    font-weight: normal;
+  }
+
+  .servicioInfo {
+    width: 50%;
+  }
+
+  .servicioCard {
+    position: relative;
+    right: 0;
+    padding: 3rem 3rem;
+    background-color: #171717;
+    color: white;
+    width: auto;
+    height: auto;
+    margin: 0 0 2rem 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  
+  .servicioCard > img {
+      width: 291px;
+      margin: auto;
+    }
+    
+    .servicioCard > h4 {
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    
+    .servicioCardRed {
+      position: relative;
+      right: 0;
+      padding: 3rem 3rem;
+      background-color: #ef3f3f;
+      color: white;
+      width: auto;
+      height: auto;
+      margin: 0 0 2rem 0;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .servicioCardRed > img {
+    width: 291px;
+    margin: auto;
+  }
+
+  .servicioCardRed > h4 {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+    
+  .text2 {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .number {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+</style>
