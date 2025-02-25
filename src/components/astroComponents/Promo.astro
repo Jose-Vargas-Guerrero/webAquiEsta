@@ -5,6 +5,11 @@ import anuncio3 from '../../assets/anuncio3.avif'
 ---
 
 <section class="anuncios">
+    <div class="contactArea">
+        <h2>Espacios publicitarios</h2>
+        <p>Mira todos los espacios en los que puedes publicitar ti negocio o servicios</p>
+        <a href="#">Contactar ahora</a>
+    </div>
     <div class="anuncio">
         <img src={anuncio1.src}/>
         <a href="#">PUBLICA TU RESTAURANTE</a>
@@ -22,32 +27,74 @@ import anuncio3 from '../../assets/anuncio3.avif'
 
 <style>
     .anuncios{
-        padding: 2rem 0;
-        height: 80vh;
+        font-family: var(--familjen);
+        height: auto;
         max-width: 100vw;
-        font-family:var(--familjen);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
+    .contactArea{
+        height: 389px;
+        width: 324px;
+        padding: 1rem 1rem;
+        position: relative;
+    }
+
+    .contactArea > h2{
+        margin: 0 0;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .contactArea > p{
+        font-size: 1rem;
+        margin: 3rem 0;
+    }
+
+    .contactArea > a{
+        text-decoration: none;
+        background-color: #0f79ae;
+        padding: 0.7rem 2rem;
+        border-radius: 30px;
+        font-weight: bold;
+        color: white;
+        transition: background-color ease 0.2s;
+    }
+
+    .contactArea > a:hover{
+        background-color: #ef3f3f;
+    }
+
+    /* cards styles */
     .anuncio{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        width: 300px;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-around;
+        align-items: center;
+        transition: box-shadow ease 0.2s;
+        cursor: pointer;
     }
+
+    .anuncio:hover{
+        box-shadow: #ef3f3f82 0px 10px 36px 0px, #ef3f3f88 0px 0px 0px 1px;
+    }
+
 
     .anuncio > img{
-        height: 433px;
-        width: auto;
+        height: 80%;
     }
 
-    .anuncio > a{
-        color: black;
+    .anuncio > a {
+        font-size: 1.1rem;
+        color: #ef3f3f;
+        text-decoration: none;
         font-weight: bold;
-        font-size: 1.4rem;
-        margin: 2rem 0;
     }
 </style>
