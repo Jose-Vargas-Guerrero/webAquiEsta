@@ -5,23 +5,23 @@ import logo from "../../assets/logo.png";
 <div class="navbar">
     <img src={logo.src} alt="aquiesta.us logo" />
     <div class="links">
-      <a href="#">Inicio</a>
+      <a href="/">Inicio</a>
       <div class="dropdown">
-        <a href="#" class="dropbtn">Explora</a>
+        <a href="/" class="dropbtn">Explora</a>
         <div class="dropdown-content">
-          <a href="#">Servicios</a>
-          <a href="#">Empleos</a>
-          <a href="#">Real State</a>
-          <a href="#">Compra y venta</a>
-          <a href="#">Educación</a>
-          <a href="#">Artistas</a>
-          <a href="#">Restaurantes</a>
-          <a href="#">Legal</a>
-          <a href="#">Deportes</a>
-          <a href="#">Envios</a>
+          <a href="/servicios">Servicios</a>
+          <a href="/empleos">Empleos</a>
+          <a href="/realState">Real State</a>
+          <a href="/compraVenta">Compra y venta</a>
+          <a href="/educacion">Educación</a>
+          <a href="/artistas">Artistas</a>
+          <a href="/restaurantes">Restaurantes</a>
+          <a href="/legales">Legal</a>
+          <a href="/deportes">Deportes</a>
+          <a href="/envios">Envios</a>
         </div>
       </div>
-      <a href="#">Planes</a>
+      <a href="/planes">Planes</a>
       <a href="#">Contacto</a>
       <a href="#">Yellow pages</a>
     </div>
@@ -29,25 +29,26 @@ import logo from "../../assets/logo.png";
   
   <style>
     .navbar {
-      height: 100px;
+      height: 130px;
       width: 100vw;
-      background-color: #171717;
+      background-color: #444444;
       position: fixed;
       top: 0;
       display: flex;
       z-index: 4;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
   
     .navbar > img {
       height: 80px;
       width: 220px;
-      margin: 0 40px;
+      margin: 0 0;
     }
   
     .links {
+      margin: 0 0;
       position: relative;
       width: 50%;
       display: flex;
@@ -58,6 +59,7 @@ import logo from "../../assets/logo.png";
   
     .links > a, .dropbtn {
       color: white;
+      font-weight: bold;
       text-decoration: none;
       font-family: var(--familjen);
       cursor: pointer;
@@ -93,6 +95,10 @@ import logo from "../../assets/logo.png";
     .dropdown-content a:hover {
         background-color: var(--redDark);
         color: white;
+    }
+
+    .links > a:hover{
+      color: #ef3f3f;
     }
   
     .dropdown:hover .dropdown-content {

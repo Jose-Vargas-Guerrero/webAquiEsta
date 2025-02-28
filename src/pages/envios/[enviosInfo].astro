@@ -1,0 +1,103 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import envios from "../../components/data/envios";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
+
+
+export async function getStaticPaths(){
+    const info =  envios;
+
+    return info.map((p) => {
+        return{
+            params: {enviosInfo: p.url},
+            props: p,
+        }
+    })
+}
+
+const {enviosInfo} = Astro.params;
+const p = Astro.props;
+
+---
+
+<Layout title={p.nombre}>
+    <section class="anuncio">
+        <img src={p.imagen} alt=`anuncio empleo aquiesta.us ${p.nombre}`/>
+        <div class="anuncioInfo">
+            <h1>{p.nombre}</h1>
+            <p>{p.descripcion}</p>
+            <a href="#">{p.telefono}</a>
+            <div class="icons">
+                <a href="#">
+                    <FaFacebookSquare />
+                </a>
+                <a href="#">
+                    <FaInstagramSquare />
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+
+<style>
+    .anuncio{
+        font-family: var(--familjen);
+        padding-top: 10%;
+        height: 100vh;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .anuncio >img{
+        width: 700px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .anuncioInfo{
+        height: auto;
+    }
+
+    .anuncioInfo > h1{
+        font-size: 3rem;
+        padding-left: 3rem;
+    }
+    
+    .anuncioInfo > p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding-left: 3rem;
+    }
+
+    .anuncioInfo > a{
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 3rem;
+    }
+
+    .icons{
+        width: auto;
+        height: auto;
+        margin: 4rem 0;
+        display: flex;
+        gap: 2rem;
+         padding-left: 3rem;
+    }
+
+    .icons >a {
+        text-decoration: none;
+        color: #ef3f3f;
+        font-size: 4rem;
+    }
+
+    
+
+
+</style>

@@ -1,0 +1,89 @@
+---
+import Layout from "../../layouts/Layout.astro"
+---
+
+
+
+<Layout title="planes">
+    <section class="planesContainer">
+        <div class="plan">
+            <img src="https://static.wixstatic.com/media/11062b_f01dd474295b4a6a8f492fc96ea3972a~mv2.jpg/v1/fill/w_474,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Black%20Texture.jpg"/>
+            <div class="planDescription">
+                <h2>Plan Básico</h2>
+                <p>
+                    The organization that works for the well-being of children with cancer at the Dr. Antonio Ortiz Pediatric University Hospital in Centro Médico is coming to PLAZA to promote its Uniendo
+                </p>
+                <strong>Precio: $$$$</strong>
+            </div>
+        </div>
+        <div class="plan">
+            <img src="https://static.wixstatic.com/media/aa8c0aa7ed284038b58a32af55ae6337.jpg/v1/fill/w_474,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Silver%20Steel%20Plate.jpg"/>
+            <div class="planDescription">
+                <h2>Plan Silver</h2>
+                <p>
+                    The organization that works for the well-being of children with cancer at the Dr. Antonio Ortiz Pediatric University Hospital in Centro Médico is coming to PLAZA to promote its Uniendo
+                </p>
+                <strong>Precio: $$$$</strong>
+            </div>
+        </div>
+        <div class="plan">
+            <img src="https://static.wixstatic.com/media/9fad6073989d41439ffce80469865c6c.jpg/v1/fill/w_474,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Golden%20Steel%20Plate.jpg"/>
+            <div class="planDescription">
+                <h2>
+                    Plan Premium
+                </h2>
+                <p>
+                    The organization that works for the well-being of children with cancer at the Dr. Antonio Ortiz Pediatric University Hospital in Centro Médico is coming to PLAZA to promote its Uniendo
+                </p>
+                <strong>Precio: $$$$</strong>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+
+<style>
+    .planesContainer{
+        height: auto;
+        max-width: 100vw;
+        padding: 12% 2rem;
+        font-family: var(--familjen);
+    }
+
+    .plan{
+        margin: 0 0 2rem 0;
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .plan > img{
+        height: 100%;
+        width: auto;
+    }
+
+    .planDescription{
+        padding: 0 2rem;
+        background-color: #545964;
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .planDescription > h2{
+        font-size: 2.5rem;
+        margin: 0 0;
+    }
+
+    .planDescription > p{
+        font-size: 1.2rem;
+    }
+</style>
