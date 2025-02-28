@@ -10,6 +10,7 @@ import Eventos from '../components/astroComponents/Eventos.astro';
 import Redes from '../components/astroComponents/Redes.astro';
 import PublicateBanner from '../components/astroComponents/PublicateBanner.astro';
 import Transmision from '../components/astroComponents/Transmision.astro';
+import PopupAnuncio from '../components/reactComponents/PopupAnuncio';
 ---
 
 <Layout title="Inicio">
@@ -23,6 +24,7 @@ import Transmision from '../components/astroComponents/Transmision.astro';
 	<Redes/>
 	<Anunciate/>	
 	<Transmision/>
+	<PopupAnuncio client:load/>
 </Layout>
 
 

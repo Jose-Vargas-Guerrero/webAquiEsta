@@ -17,7 +17,7 @@ import servicio4 from "../../assets/servicio4.avif";
     </p>
   </div>
   <div class="servicioInfo">
-    <div class="servicioCard">
+    <a href="empleos" class="servicioCard">
       <img src={servicio1.src} />
       <h4>Empleos</h4>
       <p class="text2">
@@ -25,70 +25,70 @@ import servicio4 from "../../assets/servicio4.avif";
         y niveles. Simplificamos tu búsqueda con herramientas que conectan tu
         talento con las empresas que lo necesitan. ¡Tu futuro comienza aquí!
       </p>
-    </div>
-    <div class="servicioCardRed">
+    </a>
+    <a href="/realState" class="servicioCardRed">
       <img src={servicio2.src} />
       <h4>Real State</h4>
       <p class="text2">
         Explora una amplia selección de casas y departamentos en venta o renta en tu zona. Conecta fácilmente con propietarios y agentes para encontrar la propiedad ideal para ti. ¡Haz realidad tus sueños inmobiliarios hoy!
       </p>
-    </div>
-    <div class="servicioCard">
+    </a>
+    <a href="/restaurantes" class="servicioCard">
       <img src={servicio3.src} />
       <h4>Restaurantes</h4>
       <p class="text2">
         Explora una variedad de opciones gastronómicas para todos los gustos y ocasiones. Desde comida local hasta cocina internacional, encuentra el lugar perfecto para disfrutar una experiencia única. ¡Tu próxima comida memorable te espera!
       </p>
-    </div>
-    <div class="servicioCard">
+    </a>
+    <a href="/deportes" class="servicioCard">
       <img src="https://images.pexels.com/photos/30864601/pexels-photo-30864601/free-photo-of-diversas-raquetas-en-una-colorida-cancha-al-aire-libre.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
       <h4>Deportes</h4>
       <p class="text2">
         Vive la emoción del deporte con las mejores opciones para disfrutar y practicar. Desde eventos en vivo hasta actividades recreativas, encuentra el lugar ideal para mantenerte activo y lleno de energía. ¡La acción te espera!
       </p>
-    </div>
-    <div class="servicioCardRed">
+    </a>
+    <a href="/compraVenta" class="servicioCardRed">
       <img src={servicio4.src} />
       <h4>Compra y Venta</h4>
       <p class="text2">
         Encuentra excelentes artículos a mejor precio o publica tus propios productos para vender. Desde electrónicos hasta muebles, conecta con compradores y vendedores fácilmente. ¡Todo lo que necesitas está aquí!
       </p>
-    </div>
-    <div class="servicioCard">
+    </a>
+    <a href="/compraVenta" class="servicioCard">
       <img src={"https://images.pexels.com/photos/8386668/pexels-photo-8386668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} />
       <h4>Tiendas</h4>
       <p class="text2">
         Descubre una gran variedad de tiendas con todo lo que necesitas en un solo lugar. Desde moda y tecnología hasta productos exclusivos, encuentra las mejores opciones para cada ocasión. ¡Tu próxima compra te espera!
       </p>
-    </div>
-    <div class="servicioCard">
+    </a>
+    <a href="/artistas" class="servicioCard">
       <img src={"https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} />
       <h4>Artistas</h4>
       <p class="text2">
         Explora el talento de increíbles artistas y sumérgete en un mundo de creatividad. Desde música y teatro hasta arte visual, encuentra experiencias únicas que inspiran y emocionan. ¡El arte te espera!
       </p>
-    </div>
-    <div class="servicioCardRed">
+    </a>
+    <a href="/legales" class="servicioCardRed">
       <img src={"https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=600"} />
       <h4>Abogados</h4>
       <p class="text2">
         Encuentra asesoría legal confiable para proteger tus derechos e intereses. Desde consultas especializadas hasta representación profesional, accede a soluciones jurídicas con expertos en la materia. ¡Tu tranquilidad es lo primero!
       </p>
-    </div>
-    <div class="servicioCard">
+    </a>
+    <a href="/educacion" class="servicioCard">
       <img src={"https://images.pexels.com/photos/30868855/pexels-photo-30868855/free-photo-of-nina-explorando-la-naturaleza-con-binoculares.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} />
       <h4>Educacíon</h4>
       <p class="text2">
         Amplía tus conocimientos con las mejores opciones en educación. Desde cursos y capacitaciones hasta instituciones académicas, encuentra el camino ideal para tu crecimiento. ¡Tu futuro comienza aquí!
       </p>
-    </div>
-    <div class="servicioCardRed">
+    </a>
+    <a href="/envios" class="servicioCardRed">
       <img src={"https://images.pexels.com/photos/7363192/pexels-photo-7363192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} />
       <h4>Envíos</h4>
       <p class="text2">
         Recibe y envía paquetes de forma rápida y segura. Con opciones confiables para todas tus necesidades, encuentra el servicio ideal para que tus envíos lleguen a su destino sin complicaciones. ¡Tu entrega está en buenas manos!
       </p>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -148,6 +148,7 @@ import servicio4 from "../../assets/servicio4.avif";
   }
 
   .servicioCard {
+    text-decoration: none;
     position: relative;
     right: 0;
     padding: 1rem 1rem;
@@ -174,8 +175,8 @@ import servicio4 from "../../assets/servicio4.avif";
         font-size: 2.6rem;
         margin: 1rem 0;
     }
-    
     .servicioCardRed {
+      text-decoration: none;
       position: relative;
       right: 0;
       padding: 1rem 1rem;
