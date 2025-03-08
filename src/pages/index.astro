@@ -11,9 +11,12 @@ import Redes from '../components/astroComponents/Redes.astro';
 import PublicateBanner from '../components/astroComponents/PublicateBanner.astro';
 import Transmision from '../components/astroComponents/Transmision.astro';
 import PopupAnuncio from '../components/reactComponents/PopupAnuncio';
+import PopUpAnuncioRight from '../components/reactComponents/PopUpAnuncioRight';
 ---
 
 <Layout title="Inicio">
+	<PopupAnuncio client:load/>
+	<PopUpAnuncioRight client:load/>
 	<Banner client:load/>
 	<PublicateBanner/>
 	<Servicios/>
@@ -24,7 +27,6 @@ import PopupAnuncio from '../components/reactComponents/PopupAnuncio';
 	<Redes/>
 	<Anunciate/>	
 	<Transmision/>
-	<PopupAnuncio client:load/>
 </Layout>
 
 

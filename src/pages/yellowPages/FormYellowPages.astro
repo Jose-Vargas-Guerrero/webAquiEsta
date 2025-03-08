@@ -1,0 +1,85 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+
+<Layout title="Formulario Yellow Pages">
+    <div class="container">
+        <h2>Haz tu anuncio gratis en nuestra seccion Yellow Pages</h2>
+       <form class="form">
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo" id="titulo" placeholder="titulo del anuncio">
+        <br/>
+        <label for="telefono">Telefono Celular</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="numero de telefono">
+        <br/>
+        <label for="texto">Texto Publicitario</label>
+        <textarea maxlength="300" name="texto" id="texto" placeholder="Descripcion de tu anuncio aqui"/>
+        <br/>
+        <button type="submit">Enviar</button>
+       </form>
+    </div>
+</Layout>
+
+<style>
+    .container{
+        font-family: var(--familjen);
+        padding: 8% 0 0 0;
+        height: 100vh;
+        max-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .container > h2{
+        font-size: 2.5rem;
+        width: 50%;
+        text-align: center;
+    }
+
+    .form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .form > label{
+        font-size: 1.2rem;
+        width: 240px;
+        margin: 0.2rem 0;
+    }
+
+    .form >input{
+        padding: 8px 20px;
+        border: none;
+        width: 200px;
+        font-size: 1.1rem;
+        color: black;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+
+    .form > textarea{
+        font-family: var(--familjen);
+        border: none;
+        width: 30%;
+        height: 200px;
+        background-color: lightgray;
+    }
+
+    .form > button{
+        background-color: #ef3f3f;
+        border: none;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        border-radius: 30px;
+    }
+</style>
